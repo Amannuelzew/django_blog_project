@@ -2,7 +2,7 @@
 <li>
                 <article class="post">
                     <a href="{% url "post_detail" article.slug %}">
-                        <img src="{% static "blog/images/"|add:article.image %}" alt="mountain"/>
+                        <img src="{% static "blog/images/"|add:article.image_name %}" alt="mountain"/>
                         <div class="post__content">
                             <h3>{{article.title|title}}</h3>
                             <p>{{article.excerpt|title}}  </p>
